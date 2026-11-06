@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <title>Bluegrass Land Title concept sketch</title>
+  <link rel="stylesheet" href="../shared/app.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="mark" aria-hidden="true">BEA</div>
+      <div>
+        <h1>Bluegrass Land Title</h1>
+        <p>File status board concept</p>
+      </div>
+    </div>
+    <div class="actions">
+      <a class="btn btn-primary" href="https://calendly.com/seekcoherence/free-business-consultation">Book a 20 minute call</a>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="banner">Sample data for illustration. This is a concept sketch from Business Edge Analytics, not a live system and not a client project.</div>
+    <section class="signal">
+      <strong>Why this sketch</strong>
+      <p>Tied to published Louisville capacity growth and new Indiana licensure.</p>
+      <div class="offices"><span class="chip">Kentucky</span><span class="chip">Indiana</span></div>
+    </section>
+
+    <div class="toolbar">
+      <div class="field">
+        <label for="office">State</label>
+        <select id="office"><option>All states</option><option>Kentucky</option><option>Indiana</option></select>
+      </div>
+    </div>
+    <section class="kpis">
+      <article class="kpi"><span>Open files</span><b id="kpi-open">0</b><em>Sample data for illustration</em></article>
+      <article class="kpi"><span>Cleared to close</span><b id="kpi-clear">0</b><em>Ready files</em></article>
+      <article class="kpi alert"><span>Waiting on documents</span><b id="kpi-wait">0</b><em>Missing items</em></article>
+      <article class="kpi"><span>Average readiness</span><b id="kpi-ready">0%</b><em>Across this view</em></article>
+    </section>
+    <section class="grid-2">
+      <div class="panel">
+        <h2>Orders by readiness</h2>
+        <div class="body list" id="board"></div>
+      </div>
+      <div class="panel">
+        <h2>Document classification preview</h2>
+        <div class="body">
+          <p class="hint">Sample incoming files with a predicted type and confidence score.</p>
+          <div class="class-row" style="font-weight:700;color:#5b6778"><div>Inbox file</div><div>Predicted type</div><div>Confidence</div></div>
+          <div id="classify"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>Concept sketch by Business Edge Analytics, Louisville, Kentucky</div>
+      <div><a href="https://www.businessedgeanalytics.com">businessedgeanalytics.com</a></div>
+    </footer>
+  </main>
+  <div class="drawer-back" id="drawer-back"></div>
+  <aside class="drawer" id="drawer" aria-label="Detail panel">
+    <h2 id="d-title">Details</h2>
+    <div class="pad">
+      <div class="kv" id="drawer-kv"></div>
+      <div id="drawer-checks"></div>
+      <p class="hint" id="drawer-note"></p>
+      <button class="btn btn-soft" id="drawer-close" type="button">Close</button>
+    </div>
+  </aside>
+  <script>window.BEA_CONCEPT = {"company": "Bluegrass Land Title", "slug": "bluegrass-land-title", "kind": "title", "signal": "Tied to published Louisville capacity growth and new Indiana licensure.", "offices": ["Kentucky", "Indiana"]};</script>
+  <script src="../shared/title.js"></script>
+</body>
+</html>

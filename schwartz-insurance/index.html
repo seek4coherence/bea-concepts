@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <title>Schwartz Insurance Group concept sketch</title>
+  <link rel="stylesheet" href="../shared/app.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="mark" aria-hidden="true">BEA</div>
+      <div>
+        <h1>Schwartz Insurance Group</h1>
+        <p>Quote intake and follow up concept</p>
+      </div>
+    </div>
+    <div class="actions">
+      <a class="btn btn-primary" href="https://calendly.com/seekcoherence/free-business-consultation">Book a 20 minute call</a>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="banner">Sample data for illustration. This is a concept sketch from Business Edge Analytics, not a live system and not a client project.</div>
+    <section class="signal">
+      <strong>Why this sketch</strong>
+      <p>Tied to the published joining of Prospect Insurance Group, with service in Prospect and Louisville.</p>
+      <div class="offices"><span class="chip">Prospect</span><span class="chip">Louisville</span></div>
+    </section>
+
+    <div class="toolbar">
+      <div class="field">
+        <label for="office">Office</label>
+        <select id="office"><option>All offices</option><option>Prospect</option><option>Louisville</option></select>
+      </div>
+      <div class="field grow">
+        <label for="search">Search quotes</label>
+        <input id="search" type="search" placeholder="Search by account, producer, or coverage">
+      </div>
+    </div>
+    <section class="kpis">
+      <article class="kpi"><span>Open quotes</span><b id="kpi-open">0</b><em>Sample data for illustration</em></article>
+      <article class="kpi alert"><span>Overdue follow ups</span><b id="kpi-overdue">0</b><em>Needs a call back</em></article>
+      <article class="kpi"><span>Bound premium</span><b id="kpi-bound">$0</b><em>Sample totals only</em></article>
+      <article class="kpi warn"><span>Renewals due in 30 days</span><b id="kpi-renew">0</b><em>Coming due</em></article>
+    </section>
+    <section class="panel" style="margin-bottom:14px">
+      <h2>Pipeline by stage</h2>
+      <div class="body"><div class="kanban" id="kanban"></div></div>
+    </section>
+    <section class="grid-2" style="margin-bottom:14px">
+      <div class="panel">
+        <h2>Overdue follow ups</h2>
+        <div class="body list" id="overdue"></div>
+      </div>
+      <div class="panel">
+        <h2>Producer workload</h2>
+        <div class="body"><canvas id="workload" height="180"></canvas></div>
+      </div>
+    </section>
+    <section class="panel">
+      <h2>Renewals coming due</h2>
+      <div class="body">
+        <table>
+          <thead><tr><th>Account</th><th>Coverage</th><th>Office</th><th>Producer</th><th>Timing</th></tr></thead>
+          <tbody id="renewals"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>Concept sketch by Business Edge Analytics, Louisville, Kentucky</div>
+      <div><a href="https://www.businessedgeanalytics.com">businessedgeanalytics.com</a></div>
+    </footer>
+  </main>
+  <div class="drawer-back" id="drawer-back"></div>
+  <aside class="drawer" id="drawer" aria-label="Detail panel">
+    <h2 id="d-title">Details</h2>
+    <div class="pad">
+      <div class="kv" id="drawer-kv"></div>
+      <div id="drawer-checks"></div>
+      <p class="hint" id="drawer-note"></p>
+      <button class="btn btn-soft" id="drawer-close" type="button">Close</button>
+    </div>
+  </aside>
+  <script>window.BEA_CONCEPT = {"company": "Schwartz Insurance Group", "slug": "schwartz-insurance", "kind": "insurance", "signal": "Tied to the published joining of Prospect Insurance Group, with service in Prospect and Louisville.", "offices": ["Prospect", "Louisville"]};</script>
+  <script src="../shared/chart.umd.min.js"></script>
+  <script src="../shared/insurance.js"></script>
+</body>
+</html>

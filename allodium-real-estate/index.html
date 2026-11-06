@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <title>Allodium Real Estate concept sketch</title>
+  <link rel="stylesheet" href="../shared/app.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="mark" aria-hidden="true">BEA</div>
+      <div>
+        <h1>Allodium Real Estate</h1>
+        <p>Transaction room concept</p>
+      </div>
+    </div>
+    <div class="actions">
+      <a class="btn btn-primary" href="https://calendly.com/seekcoherence/free-business-consultation">Book a 20 minute call</a>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="banner">Sample data for illustration. This is a concept sketch from Business Edge Analytics, not a live system and not a client project.</div>
+    <section class="signal">
+      <strong>Why this sketch</strong>
+      <p>Tied to the published need for transaction coordination across Kentucky, Indiana, and Florida.</p>
+      <div class="offices"><span class="chip">Kentucky</span><span class="chip">Indiana</span><span class="chip">Florida</span></div>
+    </section>
+
+    <div class="toolbar">
+      <div class="field">
+        <label for="office">State</label>
+        <select id="office"><option>All states</option><option>Kentucky</option><option>Indiana</option><option>Florida</option></select>
+      </div>
+      <div class="field">
+        <label for="search">Deal type</label>
+        <select id="search">
+          <option>All types</option>
+          <option>Residential</option>
+          <option>Commercial</option>
+          <option>Development</option>
+        </select>
+      </div>
+    </div>
+    <section class="kpis">
+      <article class="kpi"><span>Open deals</span><b id="kpi-open">0</b><em>Sample data for illustration</em></article>
+      <article class="kpi alert"><span>Date alerts</span><b id="kpi-alert">0</b><em>Needs attention</em></article>
+      <article class="kpi"><span>In closing</span><b id="kpi-close">0</b><em>Near the finish</em></article>
+      <article class="kpi"><span>Document completeness</span><b id="kpi-docs">0%</b><em>Average across this view</em></article>
+    </section>
+    <section class="panel" style="margin-bottom:14px">
+      <h2>Shared transaction board</h2>
+      <div class="body"><div class="kanban" id="kanban" style="grid-template-columns:repeat(4, minmax(180px, 1fr))"></div></div>
+    </section>
+    <section class="panel">
+      <h2>Date alerts</h2>
+      <div class="body list" id="alerts"></div>
+    </section>
+
+    <footer class="footer">
+      <div>Concept sketch by Business Edge Analytics, Louisville, Kentucky</div>
+      <div><a href="https://www.businessedgeanalytics.com">businessedgeanalytics.com</a></div>
+    </footer>
+  </main>
+  <div class="drawer-back" id="drawer-back"></div>
+  <aside class="drawer" id="drawer" aria-label="Detail panel">
+    <h2 id="d-title">Details</h2>
+    <div class="pad">
+      <div class="kv" id="drawer-kv"></div>
+      <div id="drawer-checks"></div>
+      <p class="hint" id="drawer-note"></p>
+      <button class="btn btn-soft" id="drawer-close" type="button">Close</button>
+    </div>
+  </aside>
+  <script>window.BEA_CONCEPT = {"company": "Allodium Real Estate", "slug": "allodium-real-estate", "kind": "deals", "signal": "Tied to the published need for transaction coordination across Kentucky, Indiana, and Florida.", "offices": ["Kentucky", "Indiana", "Florida"]};</script>
+  <script src="../shared/deals.js"></script>
+</body>
+</html>
